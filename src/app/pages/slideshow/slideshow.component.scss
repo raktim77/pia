@@ -1,0 +1,70 @@
+.slideshow {
+    text-align: center;
+    background-color: #000;
+    color: #f7b500;
+    padding: 20px;
+  }
+  
+ /* Container for the image and caption */
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensure the container only takes the size of the image */
+    width: 100%;
+  }
+  
+  /* Image styling */
+  .slide-image {
+    width: 100%; /* Ensure image fills the container */
+    // height: auto;
+    display: block; /* Remove any unwanted space under the image */
+    height: 725px;
+    object-fit: cover;
+  }
+  
+  /* Caption styling - positioned at the top */
+  .caption {
+    position: absolute;
+    top: 10px; /* Adjust the distance from the top */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #ffbb54; /* Text color */
+    text-align: center; /* Center the text */
+    font-size: 24px; /* Adjust font size as needed */
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding does not overflow the container */
+  }
+  
+  
+//   .slide-image:hover {
+//     transform: scale(1.05);
+//   }
+  
+  .message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f7b500;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .message-box button {
+    background-color: #f7b500;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+//   .message-box button:hover {
+//     background-color: #ffc107;
+//   }
+  

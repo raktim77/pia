@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+// @include mat-core();
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+
+@font-face {
+    font-family: 'FriendsFont'; /* You can name this whatever you like */
+    src: url('./assets/fonts/GABRWFFR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Apply the font globally (or wherever you need) */
+  body {
+    font-family: 'FriendsFont', sans-serif;
+  }
+  
+  /* You can also apply it to specific elements like headings */
+  h1, h2, h3 {
+    font-family: 'FriendsFont', sans-serif;
+  }
+  
+html, body { height: 100%; }

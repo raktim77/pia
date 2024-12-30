@@ -1,0 +1,41 @@
+.landing-page {
+    text-align: center;
+    font-family: 'Gabriel Weiss', sans-serif;
+    background-color: #000;
+    color: #f7b500;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 80%;
+    margin-bottom: 20px;
+    width: 100px;
+  }
+  
+  button {
+    background-color: #f7b500;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #ffc107;
+  }
+  
+
+  .friends-heading {
+    font-family: 'FriendsFont', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: #ff9900; /* Or any color you prefer */
+  }
