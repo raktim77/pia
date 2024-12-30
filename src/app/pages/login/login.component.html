@@ -1,0 +1,20 @@
+<div class="login-container">
+    <div class="login-card">
+      <h2>Welcome!</h2>
+      <p>Please enter your email to continue</p>
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          [(ngModel)]="email"
+          required
+          email
+          class="email-input"
+        />
+        <div *ngIf="emailError" class="error-message">{{ emailError }}</div>
+        <button type="submit" class="submit-btn" [disabled]="!loginForm.valid">Login</button>
+      </form>
+    </div>
+  </div>
+  

@@ -12,6 +12,8 @@ import { SurpriseComponent } from './pages/surprise/surprise.component';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { ImagesComponent } from './components/images/images.component';
 import { MaterialModule } from './modules/material.module';
+import { LoginComponent } from './pages/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { MaterialModule } from './modules/material.module';
     SlideshowComponent,
     SurpriseComponent,
     SafeUrlPipe,
-    ImagesComponent
+    ImagesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { MaterialModule } from './modules/material.module';
     BrowserAnimationsModule,
     CarouselModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
